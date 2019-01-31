@@ -11,7 +11,7 @@ Just a simple batch script converted to an silent .exe using [Bat To Exe Convert
 ## Batch
 The batch script that was used for the .exe. If you wish to look at the code or don't want to run it as an .exe or want to compile it yourself this option is for you!
 ## C#
-Was working on a C# version however this sadly doesn't work as of yet
+Was working on a C# version however this sadly **doesn't work** as of yet
 ### C# CMD
 Runs it from a silent CMD window
 ### C# Batch
