@@ -42,12 +42,14 @@ namespace KillSkype
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                //Enable this (the line above) again if you want it to run silently
                 startInfo.FileName = "cmd.exe";
                 startInfo.Arguments = "/C" + CMDCommands; //FilePath
                 process.StartInfo = startInfo;
                 process.Start();
 
-                await Task.Delay(1); //This is just to ensure all previous tasks finish //Enable this again if you want it to run silently
+                await Task.Delay(1); //This is just to ensure all previous tasks finish 
+
             }
             catch (Exception e)
             {
