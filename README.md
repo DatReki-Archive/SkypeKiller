@@ -19,7 +19,7 @@ Runs it from a batch file
 This will show you how to enable/setup the program
 
 ## .exe
-This .exe file will most likely show up as an virus. This however is because it's supposed to execute siliently so no popupes arise.
+This .exe file will most likely show up as an virus. This however is because it's supposed to execute siliently so no popups arise.
 You might need to disable your browsers security to be able to download it and if you have any antivirus installed/Windows Defender you'll have to set it as a false positve/make the anti virus ignore it.
 
-Once you have done that press ctrl + r and type shell:startup. This will take you to an folder which Windows will run programs out of on boot. The program will run around 60-80 seconds after boot before closing this is because it will take a while before Skype actually starts up. You can change this timer by downloading the batch file if you want too.
+Once you have done that press ctrl + r and type **shell:startup**. This will take you to an folder which Windows will run programs out of on boot. The program will run around 60-80 seconds after boot before closing this is because it will take a while before Skype actually starts up. You can change this timer by downloading the batch file if you want too.
