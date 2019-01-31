@@ -47,7 +47,7 @@ namespace KillSkype
                 process.StartInfo = startInfo;
                 process.Start();
 
-                await Task.Delay(1); //This is just to ensure all previous tasks finish
+                await Task.Delay(1); //This is just to ensure all previous tasks finish //Enable this again if you want it to run silently
             }
             catch (Exception e)
             {
