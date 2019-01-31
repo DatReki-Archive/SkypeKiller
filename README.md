@@ -1,7 +1,10 @@
 # A program that stops Skype running in the background
 Ever noticed how with the newest Windows updates Skype is showing up on the system tray?
 Even if you disable it from showing up on the system tray it will keep running in the background
-That's why I made this program to stop it from running
+That's why I made this program to stop it from running.
+
+Too sum it up this program needs to start at start up after which it'll wait 60 seconds then it will close down Skype related processes
+soon after that the program will shut itself down. "RuntimeBroker.exe" might keep running for a little while but that too should shut down a little later. I have noticed Skype might still come back at some point I'll look into a way of keeping it from running. **This isn't the best or a permanent solution** but it's an solution none the less.
 
 # Different versions
 ## .exe
