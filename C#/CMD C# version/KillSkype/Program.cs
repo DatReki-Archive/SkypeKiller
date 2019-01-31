@@ -14,17 +14,10 @@ namespace KillSkype
 
         static void Main(string[] args)
         {
-            Run().Wait();
-        }
-
-        static private async Task Run()
-        {
-            {
                 try
                 {
                     if (!Directory.Exists($"{DPath}")) { Directory.CreateDirectory(DPath); }
                     else if (File.Exists(Logs)) { File.WriteAllText(Logs, ""); }
-                    MakeSkypeKiller().Wait();
                     KillSkypeProcess().Wait();
                 }
                 catch (Exception ex)
@@ -32,28 +25,6 @@ namespace KillSkype
                     TextWriter LogsWriter = new StreamWriter(Logs, true);
                     LogsWriter.WriteLine($"There was an exception: {ex.ToString()}");
                 }
-            }
-        }
-
-        static private async Task MakeSkypeKiller()
-        {
-#if false
-            StringBuilder BatchWriter = new StringBuilder();
-            BatchWriter.AppendLine("SETCONSOLE /minimize");
-            BatchWriter.AppendLine("taskkill /f /im skypeapp.exe");
-            BatchWriter.AppendLine("taskkill /f /im skypehost.exe");
-            BatchWriter.AppendLine("taskkill /f /im SkypeBackgroundHost.exe");
-            BatchWriter.AppendLine("taskkill /f /im SkypeBridge.exe");
-
-            if (!File.Exists(FilePath))
-            {
-                using (var tw = new StreamWriter(FilePath, true))
-                {
-                    tw.WriteLine(BatchWriter);
-                }
-            }
-            await Task.Delay(1); //This is just to ensure all previous tasks finish
-#endif
         }
 
         static private async Task KillSkypeProcess()
