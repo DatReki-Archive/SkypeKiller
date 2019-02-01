@@ -28,4 +28,4 @@ Once you have done that press ctrl + r and type **shell:startup**. This will tak
 
 
 ### Batch to .exe
-Download the batch script and download install [Bat To Exe Converter](http://www.f2ko.de/en/b2e.php) or any other batch to .exe converter you might want to use. After you converted it you should be able to just drop it into the start up folder using **shell:startup** again and it should start after around 60/80 seconds after the PC booted into Windows.
+Download the batch script and download and install [Bat To Exe Converter](http://www.f2ko.de/en/b2e.php) or any other batch to .exe converter you might want to use. After you converted it you should be able to just drop it into the start up folder using **shell:startup** again and it should start after around 60/80 seconds after the PC booted into Windows.
