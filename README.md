@@ -1,3 +1,6 @@
+## Note
+This currently hasn't worked for a while. Granted MS has reveresed their decision for a while now and I'm pretty sure Sykpe doesn't launch with Windows anymore even on fresh installs. And the auto start can be enabled/disabled again.
+
 # A program that stops Skype running in the background
 Ever noticed how with the newest Windows updates Skype is showing up on the system tray?
 Even if you disable it from showing up on the system tray it will keep running in the background
